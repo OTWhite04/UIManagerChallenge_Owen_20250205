@@ -6,6 +6,7 @@ using System;
 
 public class UIManagerScript : MonoBehaviour
 {
+    //int for the score and reference for the TextMeshPro.
     public int score;
     
     public TextMeshProUGUI scoreText;
