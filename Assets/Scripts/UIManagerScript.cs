@@ -17,7 +17,19 @@ public class UIManagerScript : MonoBehaviour
 
     public void ScoreUp()
     {
-        score += 5;
+        score += 20;
+        UpdateScoreUI();
+    }
+
+    public void ScoreDown()
+    {
+        score -= 20;
+        UpdateScoreUI();
+    }
+
+    public void ScoreReset()
+    {
+        score = 0;
         UpdateScoreUI();
     }
 
