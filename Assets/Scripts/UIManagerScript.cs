@@ -16,24 +16,28 @@ public class UIManagerScript : MonoBehaviour
         score = 0;
     }
 
+    //Method for increasing the score by 20 after pushing the button.
     public void ScoreUp()
     {
         score += 20;
         UpdateScoreUI();
     }
 
+    //Method for decreasing the score by 20 after pushing a button.
     public void ScoreDown()
     {
         score -= 20;
         UpdateScoreUI();
     }
 
+    //Resets the score after pushing a button.
     public void ScoreReset()
     {
         score = 0;
         UpdateScoreUI();
     }
 
+    //Method for updating the score UI.
     public void UpdateScoreUI()
     {
         scoreText.text = score.ToString();
